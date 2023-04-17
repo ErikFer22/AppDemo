@@ -8,9 +8,9 @@ import { MaterialIcons } from "@expo/vector-icons";
 const Home = ({ navigation }) => {
   return (
     <View>
-      <StatusBar style='Black' />
-      <Box safeAreaTop bg="pink.600" />
-      <HStack bg="pink.600" px="1" py="3" justifyContent="space-between" alignItems="center" w="100%" maxW="100%">
+      <StatusBar  />
+      <Box safeAreaTop bg="violet.600" />
+      <HStack bg="violet.600" px="1" py="3" justifyContent="space-between" alignItems="center" w="100%" maxW="100%">
       <HStack alignItems="center">
           <IconButton icon={<Icon size="sm" as={MaterialIcons} name="menu" color="white"
           onPress={() => alert("Menu de hamburguesa no desbloqueado uwu")} />} />
@@ -19,7 +19,7 @@ const Home = ({ navigation }) => {
           </Text>
         </HStack>
         <HStack>
-          <IconButton icon={<Icon as={MaterialIcons} name="favorite" size="sm" color="white"
+          <IconButton icon={<Icon as={MaterialIcons} name="camera" size="sm" color="white"
           onPress={() => navigation.navigate(screen.favorite)} />} />
           <IconButton icon={<Icon as={MaterialIcons} name="search" size="sm" color="white" 
           onPress={() => navigation.navigate(screen.search)}/>} />

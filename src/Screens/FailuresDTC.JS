@@ -4,13 +4,13 @@ import React from 'react'
 // Native base imports
 import { Button } from "native-base";
 
-const Search = ({ navigation }) => {
+const FailuresDTC = ({ navigation }) => {
   return (
     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text>Search screen</Text>
+      <Text>Favorite Screen</Text>
       <Button mt='5' onPress={() => navigation.goBack()}>Go Back</Button>
     </View>
   )
 }
 
-export default Search
+export default FailuresDTC

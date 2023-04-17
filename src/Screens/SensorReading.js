@@ -4,7 +4,7 @@ import React from 'react'
 // Native base imports
 import { Button } from "native-base";
 
-const Favorite = ({ navigation }) => {
+const SensorReading = ({ navigation }) => {
   return (
     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
       <Text>Favorite Screen</Text>
@@ -13,4 +13,4 @@ const Favorite = ({ navigation }) => {
   )
 }
 
-export default Favorite
+export default SensorReading

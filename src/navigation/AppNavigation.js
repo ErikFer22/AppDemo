@@ -2,11 +2,22 @@ import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import screen from '../utils/screenNames';
 // Screens imports
-import Home from '../screens/Home'
-import ScreenSettings from '../screens/ScreenSettings'
-import Help from '../screens/Help'
-import Search from '../screens/Search'
-import Favorite from '../screens/Favorite'
+import Home from '../Screens/Home'
+import ScreenSettings from '../Screens/ScreenSettings'
+import Splash from '../Screens/Splash';
+import SignUp from '../Screens/SignUp';
+import ServicesCatalog from '../Screens/ServicesCatalog';
+import SensorReading from '../Screens/SensorReading';
+import Profile from '../Screens/Profile';
+import Login from '../Screens/Login';
+import FailuresDTC from '../Screens/FailuresDTC.JS';
+import EmissionsTest from '../Screens/EmissionsTest';
+import CarData from '../Screens/CarData';
+import Board from '../Screens/board';
+import BluetoothS from '../Screens/BluetoothS';
+import AutomotiveService1 from '../Screens/AutomotiveService1';
+import AutomotiveService2 from '../Screens/AutomotiveService2';
+
 
 
 
@@ -30,18 +41,66 @@ const AppStack = () => {
         />
 
         <Stack.Screen 
-            name={screen.help} 
-            component={Help} 
+            name={screen.splash} 
+            component={Splash} 
         />
 
         <Stack.Screen 
-            name={screen.search} 
-            component={Search} 
+            name={screen.singup} 
+            component={SignUp} 
         />
         
         <Stack.Screen 
-            name={screen.favorite} 
-            component={Favorite} 
+            name={screen.servicesCatalog} 
+            component={ServicesCatalog} 
+        />
+        <Stack.Screen 
+            name={screen.sensorReading} 
+            component={SensorReading} 
+        />
+
+        <Stack.Screen 
+            name={screen.profile} 
+            component={Profile} 
+        />
+
+        <Stack.Screen 
+            name={screen.login} 
+            component={Login} 
+        />
+
+        <Stack.Screen 
+            name={screen.failures} 
+            component={FailuresDTC} 
+        />
+        
+        <Stack.Screen 
+            name={screen.emissions} 
+            component={EmissionsTest} 
+        />
+        <Stack.Screen 
+            name={screen.cardata} 
+            component={CarData} 
+        />
+
+        <Stack.Screen 
+            name={screen.board} 
+            component={Board} 
+        />
+
+        <Stack.Screen 
+            name={screen.blueetooth} 
+            component={BluetoothS} 
+        />
+
+        <Stack.Screen 
+            name={screen.automative1} 
+            component={AutomotiveService1} 
+        />
+        
+        <Stack.Screen 
+            name={screen.automative2} 
+            component={AutomotiveService2} 
         />
 
     </Stack.Navigator>
