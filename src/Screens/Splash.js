@@ -48,7 +48,7 @@ export default function Splash() {
     <View
       style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}
       onLayout={onLayoutRootView}>
-      <Text>SplashScreen Demo! 👋</Text>
+      <Text>Splash</Text>
       <Entypo name="rocket" size={30} />
     </View>
   );
