@@ -2,7 +2,7 @@ import { NativeBaseProvider, Box, Center,Heading,
     FormControl,Input,Button,Link,Text,HStack,VStack } from "native-base";
 import React from "react";
 
-const singup = ({navigation}) => {
+const SingUp = ({navigation}) => {
     return <Center w="100%">
         <Box safeArea p="2" w="90%" maxW="290" py="8">
           <Heading size="lg" color="coolGray.800" _dark={{
@@ -39,4 +39,4 @@ const singup = ({navigation}) => {
       </Center>;
   };
 
-  export default singup;
+  export default SingUp;
