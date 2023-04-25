@@ -41,7 +41,7 @@ const singup = ({navigation}) => {
                 Atras
               </Button>
               <Button w = "50%"
-              onPress={() => navigation.navigate('login')}
+              onPress={() => navigation.navigate(screen.cardata)}
               mt="2"
               colorScheme="green">
                 Siguiente

@@ -1,7 +1,7 @@
 import { View } from 'react-native'
 import React from 'react'
 import { StatusBar } from 'expo-status-bar';
-import { Box, Text, HStack, Icon, Menu, Pressable, IconButton } from "native-base";
+import { Box, Text, HStack, Icon, Menu, Pressable, IconButton,Image,VStack } from "native-base";
 // MaterialIcons 
 import { MaterialIcons } from "@expo/vector-icons";
 
@@ -9,20 +9,14 @@ const Home = ({ navigation }) => {
   return (
     <View>
       <StatusBar  />
-      <Box safeAreaTop bg="violet.600" />
-      <HStack bg="violet.600" px="1" py="3" justifyContent="space-between" alignItems="center" w="100%" maxW="100%">
+      <Box safeAreaTop bg="gray.300" />
+      <HStack bg="gray.300" px="1" py="3" justifyContent="space-between" alignItems="center" w="100%" maxW="100%">
       <HStack alignItems="center">
-          <IconButton icon={<Icon size="sm" as={MaterialIcons} name="menu" color="white"
-          onPress={() => alert("Menu de hamburguesa no desbloqueado uwu")} />} />
-          <Text color="white" fontSize="20" fontWeight="bold">
-            Home
+          <Text color="black" fontSize="20" fontWeight="bold">
+            Scar
           </Text>
         </HStack>
         <HStack>
-          <IconButton icon={<Icon as={MaterialIcons} name="camera" size="sm" color="white"
-          onPress={() => navigation.navigate(screen.favorite)} />} />
-          <IconButton icon={<Icon as={MaterialIcons} name="search" size="sm" color="white" 
-          onPress={() => navigation.navigate(screen.search)}/>} />
           <Menu 
             w="190" 
             trigger={triggerProps => {
@@ -31,12 +25,39 @@ const Home = ({ navigation }) => {
                     </Pressable>
               }}>
             <Menu.Item onPress={() => navigation.navigate(screen.settings)}>Settings</Menu.Item>
-            <Menu.Item onPress={() => navigation.navigate(screen.help)}>Help</Menu.Item>
-
           </Menu>
-
         </HStack>
       </HStack>
+      <Box>
+        <VStack space={10} justifyContent="center" alignItems="center" safeAreaTop // my={6}
+        mb={6}>
+          <HStack space={6} alignItems="center">
+         <Image size={100} borderRadius={100} source={{
+          uri: "https://cdn-icons-png.flaticon.com/512/4426/4426733.png"
+        }} alt="codigo de motor" />
+          <Text alignItems="center" >
+            Codigo de motor
+          </Text>
+          </HStack>
+          <HStack space={6} alignItems="center" >
+         <Image size={100} borderRadius={100} source={{
+          uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaTlGtxMPOTzb2FRLUiumVmpkgHlwauUv6Cw&usqp=CAU"
+        }} alt="Tablero" />
+          <Text>
+            Tablero de instrumento
+          </Text>
+          </HStack>
+          <HStack alignItems="center" space={6} >
+         <Image size={100} borderRadius={100} source={{
+          uri: "https://static.vecteezy.com/system/resources/previews/020/347/683/non_2x/emissions-test-icon-vector.jpg"
+        }} alt="prueba de emisiones" />
+          <Text>
+            Prueba de emisiones
+          </Text>
+          </HStack>
+  
+        </VStack>
+      </Box>
     </View>
   )
 }

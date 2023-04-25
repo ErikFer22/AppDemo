@@ -33,7 +33,7 @@ const Login = ({navigation}) => {
               </Link>
             </FormControl>
             <Button 
-            onPress={() => navigation.navigate('Home')}
+            onPress={() => navigation.navigate(screen.home)}
             mt="2" colorScheme="green">
               Sign in
             </Button>
