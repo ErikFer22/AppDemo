@@ -17,6 +17,7 @@ import Board from '../Screens/board';
 import BluetoothS from '../Screens/BluetoothS';
 import AutomotiveService1 from '../Screens/AutomotiveService1';
 import AutomotiveService2 from '../Screens/AutomotiveService2';
+import HomeTabs from './HomeTabs';
 
 
 
@@ -32,7 +33,7 @@ const AppStack = () => {
     >
         <Stack.Screen 
             name={screen.home} 
-            component={Home} 
+            component={HomeTabs} 
         />
 
         <Stack.Screen 

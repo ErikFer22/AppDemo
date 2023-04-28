@@ -3,33 +3,15 @@ import React from 'react'
 import { StatusBar } from 'expo-status-bar';
 import { Box, Text, HStack, Icon, Menu, Pressable, IconButton,Image,VStack } from "native-base";
 // MaterialIcons 
-import { MaterialIcons } from "@expo/vector-icons";
+import { MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons';
 
 const Home = ({ navigation }) => {
+  const [selected, setSelected] = React.useState(1);
   return (
     <View>
-      <StatusBar  />
-      <Box safeAreaTop bg="gray.300" />
-      <HStack bg="gray.300" px="1" py="3" justifyContent="space-between" alignItems="center" w="100%" maxW="100%">
-      <HStack alignItems="center">
-          <Text color="black" fontSize="20" fontWeight="bold">
-            Scar
-          </Text>
-        </HStack>
-        <HStack>
-          <Menu 
-            w="190" 
-            trigger={triggerProps => {
-              return <Pressable accessibilityLabel="More options menu" {...triggerProps}>
-                      <Icon as={MaterialIcons} name="more-vert" size="sm" color="white" />
-                    </Pressable>
-              }}>
-            <Menu.Item onPress={() => navigation.navigate(screen.settings)}>Settings</Menu.Item>
-          </Menu>
-        </HStack>
-      </HStack>
-      <Box>
-        <VStack space={10} justifyContent="center" alignItems="center" safeAreaTop // my={6}
+      
+      <Box safeAreaTop="6" >
+        <VStack space={10} justifyContent="space-between" alignItems="center" 
         mb={6}>
           <HStack space={6} alignItems="center">
          <Image size={100} borderRadius={100} source={{
@@ -58,6 +40,7 @@ const Home = ({ navigation }) => {
   
         </VStack>
       </Box>
+      
     </View>
   )
 }
