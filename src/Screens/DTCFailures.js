@@ -4,7 +4,7 @@ import React from 'react'
 // Native base imports
 import { Button } from "native-base";
 
-const FailuresDTC = ({ navigation }) => {
+const DTCFailures= ({ navigation }) => {
   return (
     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
       <Text>Favorite Screen</Text>
@@ -13,4 +13,4 @@ const FailuresDTC = ({ navigation }) => {
   )
 }
 
-export default FailuresDTC
+export default DTCFailures

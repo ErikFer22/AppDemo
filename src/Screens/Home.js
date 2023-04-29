@@ -1,44 +1,120 @@
 import { View } from 'react-native'
 import React from 'react'
 import { StatusBar } from 'expo-status-bar';
-import { Box, Text, HStack, Icon, Menu, Pressable, IconButton,Image,VStack } from "native-base";
+
+import { Box, Text, HStack, Icon, Menu, Pressable, Center,Image,VStack,Button } from "native-base";
 // MaterialIcons 
-import { MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons';
+import {  MaterialIcons } from '@expo/vector-icons';
+
+
 
 const Home = ({ navigation }) => {
-  const [selected, setSelected] = React.useState(1);
+  
   return (
     <View>
-      
-      <Box safeAreaTop="6" >
-        <VStack space={10} justifyContent="space-between" alignItems="center" 
-        mb={6}>
-          <HStack space={6} alignItems="center">
-         <Image size={100} borderRadius={100} source={{
+      <StatusBar  />
+        <HStack bg="gray.300" px="1" py="3" justifyContent="space-between" alignItems="center" w="100%" maxW="100%">
+        <HStack alignItems="center">
+          <Text color="black" fontSize="20" fontWeight="bold">
+            Scar
+          </Text>
+        </HStack>
+        <HStack>
+          <Menu 
+            w="190" 
+            trigger={triggerProps => {
+              return <Pressable accessibilityLabel="More options menu" {...triggerProps}>
+                      <Icon as={MaterialIcons} name="more-vert" size="sm" color="white" />
+                    </Pressable>
+              }}>
+            <Menu.Item onPress={() => navigation.navigate(screen.settings)}>Settings</Menu.Item>
+          </Menu>
+        </HStack>
+       </HStack>
+        <Box safeAreaTop="6" >
+        <VStack space={10}  alignItems="center" justifyContent="space-between"
+        >
+          <HStack w="64" h="20" justifyContent="space-between">
+         <Image 
+         size={100} 
+         
+         borderRadius={100} source={{
           uri: "https://cdn-icons-png.flaticon.com/512/4426/4426733.png"
         }} alt="codigo de motor" />
-          <Text alignItems="center" >
-            Codigo de motor
-          </Text>
+          <Button  mt='10' onPress={() => navigation.navigate(screen.fallas)}>Codigo de motor</Button>
           </HStack>
-          <HStack space={6} alignItems="center" >
-         <Image size={100} borderRadius={100} source={{
+          <HStack w="64" h="20"  alignItems="center" space={6} >
+            
+         <Image size={100} 
+         
+         borderRadius={100} source={{
           uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaTlGtxMPOTzb2FRLUiumVmpkgHlwauUv6Cw&usqp=CAU"
         }} alt="Tablero" />
-          <Text>
-            Tablero de instrumento
-          </Text>
+          <Button mt='10' onPress={() => navigation.navigate(screen.board)}>Tablero</Button>
           </HStack>
-          <HStack alignItems="center" space={6} >
-         <Image size={100} borderRadius={100} source={{
+          <HStack w="64" h="20" alignItems="center" space={6}  >
+         <Image size={100} 
+         
+         borderRadius={100} source={{
           uri: "https://static.vecteezy.com/system/resources/previews/020/347/683/non_2x/emissions-test-icon-vector.jpg"
         }} alt="prueba de emisiones" />
-          <Text>
-            Prueba de emisiones
-          </Text>
+          <Button mt='10' onPress={() => navigation.navigate(screen.emissions)}>Prueba de emisiones</Button>
           </HStack>
-  
         </VStack>
+        
+      </Box>
+      <Box safeAreaTop= "8">
+        <VStack space={10}  alignItems="center" justifyContent="space-between">
+        <HStack w="100%" h="10" justifyContent="space-between">
+        <Center w="50%" h="10" >
+        <Box _text={{
+        fontWeight: "bold",
+        fontSize: "lg",
+        color: "black"
+      }}>
+          ELM:
+        </Box>
+      </Center>
+      <Center w="50%" h="10" >
+        <Box _text={{
+        fontWeight: "bold",
+        fontSize: "lg",
+        color: "#FF0000"
+      }}>
+          Desconectado
+        </Box>
+      </Center>
+        </HStack>
+        <HStack w="100%" h="10" justifyContent="space-between">
+        <Center w="50%" h="10" >
+        <Box _text={{
+        fontWeight: "bold",
+        fontSize: "lg",
+        color: "black"
+      }}>
+          ECU:
+        </Box>
+      </Center>
+      <Center w="50%" h="10" >
+        <Box _text={{
+        fontWeight: "bold",
+        fontSize: "lg",
+        color: "#FF0000"
+      }}>
+          Desconectado
+        </Box>
+      </Center>
+        </HStack>
+        <HStack w="100%" h="30" bg="green.200">
+          <Button bgColor="green.600" w="100%" h="30" _text={{
+            frontWeight: "bold",
+            frontSize: "lg",
+            color: "black"
+          }}>Conectate</Button>
+
+        </HStack>
+          </VStack>
+
       </Box>
       
     </View>

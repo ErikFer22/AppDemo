@@ -34,7 +34,8 @@ function HomeTabs() {
         tabBarActiveTintColor: 'tomato',
         tabBarInactiveTintColor: 'gray',
       })}>
-        <Tab.Screen name={screen.home} component={Home} />
+        <Tab.Screen name={screen.home} component={Home}
+        options={{headerShown: false}} />
         <Tab.Screen name={screen.blueetooth} component={BluetoothS} />
         <Tab.Screen name={screen.servicesCatalog} component={ServicesCatalog} />
         <Tab.Screen name={screen.profile} component={Profile} />

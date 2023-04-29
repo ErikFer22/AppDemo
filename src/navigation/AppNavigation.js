@@ -10,7 +10,6 @@ import ServicesCatalog from '../Screens/ServicesCatalog';
 import SensorReading from '../Screens/SensorReading';
 import Profile from '../Screens/Profile';
 import Login from '../Screens/Login';
-import FailuresDTC from '../Screens/FailuresDTC.JS';
 import EmissionsTest from '../Screens/EmissionsTest';
 import CarData from '../Screens/CarData';
 import Board from '../Screens/board';
@@ -18,6 +17,9 @@ import BluetoothS from '../Screens/BluetoothS';
 import AutomotiveService1 from '../Screens/AutomotiveService1';
 import AutomotiveService2 from '../Screens/AutomotiveService2';
 import HomeTabs from './HomeTabs';
+import DTCFailures from '../Screens/DTCFailures';
+
+
 
 
 
@@ -71,8 +73,8 @@ const AppStack = () => {
         />
 
         <Stack.Screen 
-            name={screen.failures} 
-            component={FailuresDTC} 
+            name={screen.fallas} 
+            component={DTCFailures}
         />
         
         <Stack.Screen 
