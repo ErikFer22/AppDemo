@@ -36,7 +36,8 @@ function HomeTabs() {
       })}>
         <Tab.Screen name={screen.home} component={Home}
         options={{headerShown: false}} />
-        <Tab.Screen name={screen.blueetooth} component={BluetoothS} />
+        <Tab.Screen name={screen.blueetooth} component={BluetoothS}
+        options={{headerShown: true}} />
         <Tab.Screen name={screen.servicesCatalog} component={ServicesCatalog} />
         <Tab.Screen name={screen.profile} component={Profile} />
       </Tab.Navigator>

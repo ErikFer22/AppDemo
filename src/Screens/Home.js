@@ -64,7 +64,7 @@ const Home = ({ navigation }) => {
         
       </Box>
       <Box safeAreaTop= "8">
-        <VStack space={10}  alignItems="center" justifyContent="space-between">
+        <VStack space="8"  alignItems="center" justifyContent="space-between">
         <HStack w="100%" h="10" justifyContent="space-between">
         <Center w="50%" h="10" >
         <Box _text={{
@@ -105,15 +105,16 @@ const Home = ({ navigation }) => {
         </Box>
       </Center>
         </HStack>
-        <HStack w="100%" h="30" bg="green.200">
-          <Button bgColor="green.600" w="100%" h="30" _text={{
+        <HStack w="100%" h="30" safeAreaBottom>
+          <Button safeAreaBottom bgColor="green.600" w="100%" h="30" _text={{
             frontWeight: "bold",
             frontSize: "lg",
             color: "black"
           }}>Conectate</Button>
 
         </HStack>
-          </VStack>
+        </VStack>
+        
 
       </Box>
       

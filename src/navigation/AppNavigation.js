@@ -12,12 +12,13 @@ import Profile from '../Screens/Profile';
 import Login from '../Screens/Login';
 import EmissionsTest from '../Screens/EmissionsTest';
 import CarData from '../Screens/CarData';
-import Board from '../Screens/board';
+
 import BluetoothS from '../Screens/BluetoothS';
 import AutomotiveService1 from '../Screens/AutomotiveService1';
 import AutomotiveService2 from '../Screens/AutomotiveService2';
 import HomeTabs from './HomeTabs';
 import DTCFailures from '../Screens/DTCFailures';
+import Board1 from '../Screens/Board1';
 
 
 
@@ -73,8 +74,10 @@ const AppStack = () => {
         />
 
         <Stack.Screen 
+            
             name={screen.fallas} 
             component={DTCFailures}
+            options={{headerShown: true}}
         />
         
         <Stack.Screen 
@@ -88,7 +91,8 @@ const AppStack = () => {
 
         <Stack.Screen 
             name={screen.board} 
-            component={Board} 
+            component={Board1}
+            options={{headerShown: true}} 
         />
 
         <Stack.Screen 

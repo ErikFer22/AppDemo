@@ -7,7 +7,7 @@ export default screen = {
     settings: 'Screen Settings',
     profile: 'Perfil',
     login: 'Screen Login',
-    fallas: 'Screen FallasDTC',
+    fallas: 'FallasDTC',
     emissions: 'Screen EmissionsTest',
     cardata: 'Screen CarData',
     board: 'Screen Board',
