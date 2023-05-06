@@ -105,7 +105,7 @@ const Home = ({ navigation }) => {
         </Box>
       </Center>
         </HStack>
-        <HStack w="100%" h="30" safeAreaBottom>
+        <HStack  bgColor="green.600"  alignItems="end">
           <Button safeAreaBottom bgColor="green.600" w="100%" h="30" _text={{
             frontWeight: "bold",
             frontSize: "lg",
