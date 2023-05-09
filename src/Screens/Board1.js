@@ -1,4 +1,4 @@
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image} from 'react-native'
 import React from 'react'
 import { StatusBar } from 'expo-status-bar';
 
@@ -17,6 +17,7 @@ const Board = ({ navigation }) => {
         />
       
       <Text>0 0 km/h</Text>
+      
       <Button mt='5' onPress={() => navigation.goBack()}>Go menu</Button>
     </View>
   )
