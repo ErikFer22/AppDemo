@@ -7,7 +7,7 @@ import { Button } from "native-base";
 const Binnacle = ({ navigation }) => {
   return (
     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text>Favorite Screen11111</Text>
+      <Text>Favorite Screen1111111</Text>
       <Button mt='5' onPress={() => navigation.goBack()}>Go Back</Button>
     </View>
   )
