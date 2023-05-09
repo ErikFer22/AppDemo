@@ -9,6 +9,7 @@ const SensorReading = ({ navigation }) => {
     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
       <Text>Favorite Screen</Text>
       <Text>Favorite Screen</Text>
+      <Text>Favorite Screen</Text>
       <Button mt='5' onPress={() => navigation.goBack()}>Go Back</Button>
     </View>
   )
