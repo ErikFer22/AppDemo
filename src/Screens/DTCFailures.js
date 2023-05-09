@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, VStack, HStack } from 'react-native'
 import React from 'react'
 
 // Native base imports
@@ -8,7 +8,13 @@ const DTCFailures= ({ navigation }) => {
   return (
     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
       <Text>Favorite DTCFailures</Text>
-      <Button mt='5' onPress={() => navigation.goBack()}>Go Back</Button>
+          <Button style={{marginTop: 350}}
+          bgColor="red.600" w="100%" h="30" _text={{
+            frontWeight: "bold",
+            frontSize: "lg",
+            color: "black"
+          }}>Borrar fallas DTC encontradas</Button>
+
     </View>
   )
 }
