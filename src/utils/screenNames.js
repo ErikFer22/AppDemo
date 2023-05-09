@@ -13,8 +13,8 @@ export default screen = {
     board: 'Screen Board',
     blueetooth: ' Elegir Dispositivo',
     binnacle: 'Bitacora de servicios',
-    automative1: 'Screen AutomativeService1',
-    automative2: 'Screen AutomativeService2',
+    automative1: '5,000 km',
+    automative2: '10,000 km',
     tabs: 'HomeTabs',
     
 };

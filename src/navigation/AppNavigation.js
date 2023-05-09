@@ -104,11 +104,13 @@ const AppStack = () => {
         <Stack.Screen 
             name={screen.automative1} 
             component={AutomotiveService1} 
+            options={{headerShown: true}}
         />
         
         <Stack.Screen 
             name={screen.automative2} 
-            component={AutomotiveService2} 
+            component={AutomotiveService2}
+            options={{headerShown: true}} 
         />
 
     </Stack.Navigator>
