@@ -22,7 +22,7 @@ const ServicesCatalog = ({ navigation }) => {
         </Center>
         <Center w="64" h="20"  >
         <Text>
-          ¿Cuando fue la última revisión?
+          Tipos de servico
         </Text>
         </Center>
         <View style={{ flex: 1, alignItems: 'end', marginTop: 30}}>

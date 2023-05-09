@@ -8,7 +8,7 @@ export default screen = {
     profile: 'Perfil',
     login: 'Screen Login',
     fallas: 'FallasDTC',
-    emissions: 'Screen EmissionsTest',
+    emissions: 'Pruebas de emisiones',
     cardata: 'Screen CarData',
     board: 'Screen Board',
     blueetooth: ' Elegir Dispositivo',

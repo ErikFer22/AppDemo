@@ -17,8 +17,8 @@ function HomeTabs() {
 
           if (route.name === (screen.home)) {
             iconName = focused
-              ? 'ios-information-circle'
-              : 'ios-information-circle-outline';
+              ? 'home'
+              : 'home-outline';
           } else if (route.name === (screen.blueetooth)) {
             iconName = focused ? 'bluetooth' : 'bluetooth-outline';
           }

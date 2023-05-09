@@ -82,7 +82,8 @@ const AppStack = () => {
         
         <Stack.Screen 
             name={screen.emissions} 
-            component={EmissionsTest} 
+            component={EmissionsTest}
+            options={{headerShown: true}}
         />
         <Stack.Screen 
             name={screen.cardata} 
