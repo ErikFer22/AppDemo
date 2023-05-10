@@ -18,11 +18,12 @@ const Board1 = ({ navigation }) => {
           source={{ uri: "https://cdn.pixabay.com/photo/2013/07/12/18/30/rpm-153397_1280.png" }}
         />
       <HStack space={200}>
-      <Text>0 0 km/h</Text>
-      <Text>95°</Text>
+      <Text fontSize="6xl" >0 0 km/h</Text>
+      <Text fontSize="6xl">95°</Text>
       </HStack>
       
-      <Button mt='5' onPress={() => navigation.goBack()}>Go menu</Button>
+      <Button _text={{color: 'black'}}
+      mt='5' bg='gray.200' width='100%' onPress={() => navigation.navigate(screen.sensorReading)}>Todos los sensores</Button>
     </View>
   )
 }

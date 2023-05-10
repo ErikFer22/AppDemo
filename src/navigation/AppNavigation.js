@@ -60,7 +60,8 @@ const AppStack = () => {
         />
         <Stack.Screen 
             name={screen.sensorReading} 
-            component={SensorReading} 
+            component={SensorReading}
+            options={{headerShown: true}}
         />
 
         <Stack.Screen 

@@ -7,9 +7,9 @@ import { Button } from "native-base";
 const EmissionsTest = ({ navigation }) => {
   return (
     
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text>emissions test Screen</Text>
-      <Button mt='5' onPress={() => navigation.goBack()}>Go Back</Button>
+    <View style={{flex: 1}}>
+      <Text>Desde el momento del reseteo del DTC:</Text>
+      
     </View>
   )
 }

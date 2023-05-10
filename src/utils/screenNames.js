@@ -3,7 +3,7 @@ export default screen = {
     splash: 'Screen Splash',
     singup: 'Screen SingUp',
     servicesCatalog: 'Bitacora de servicios',
-    sensorReading: 'Screen SensorReading',
+    sensorReading: 'Todos los sensores',
     settings: 'Screen Settings',
     profile: 'Perfil',
     login: 'Screen Login',
