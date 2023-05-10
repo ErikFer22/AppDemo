@@ -1,4 +1,4 @@
-import { View, Text, Image } from 'react-native'
+import { View, Text, Image} from 'react-native'
 import React from 'react'
 import { StatusBar } from 'expo-status-bar';
 
@@ -6,7 +6,7 @@ import { StatusBar } from 'expo-status-bar';
 // Native base imports
 import { Button, HStack  } from "native-base";
 
-const Board = ({ navigation }) => {
+const Board1 = ({ navigation }) => {
   return (
     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
       <StatusBar  />
@@ -27,4 +27,4 @@ const Board = ({ navigation }) => {
   )
 }
 
-export default Board
+export default Board1
